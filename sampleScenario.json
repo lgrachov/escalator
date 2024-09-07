@@ -1,0 +1,50 @@
+{
+  "scenario": {
+    "title": "The Mysterious Cave",
+    "description": "You find yourself standing at the entrance of a dark and mysterious cave. The air is damp and the silence is eerie. What do you do?",
+    "options": [
+      {
+        "text": "Enter the cave",
+        "next": "inside_cave"
+      },
+      {
+        "text": "Turn back and leave",
+        "next": "game_over"
+      }
+    ]
+  },
+  "inside_cave": {
+    "title": "Inside the Cave",
+    "description": "You cautiously step into the cave. The darkness engulfs you, but you can make out a faint glimmer in the distance. What do you do?",
+    "options": [
+      {
+        "text": "Follow the glimmer",
+        "next": "treasure_room"
+      },
+      {
+        "text": "Explore the cave further",
+        "next": "dead_end"
+      }
+    ]
+  },
+  "treasure_room": {
+    "title": "Treasure Room",
+    "description": "You follow the glimmer and discover a hidden treasure room filled with gold and jewels. Congratulations, you've won the game!",
+    "options": []
+  },
+  "dead_end": {
+    "title": "Dead End",
+    "description": "You continue exploring the cave but reach a dead end. It seems there's nothing more to discover here. You decide to turn back.",
+    "options": [
+      {
+        "text": "Return to the entrance",
+        "next": "scenario"
+      }
+    ]
+  },
+  "game_over": {
+    "title": "Game Over",
+    "description": "You decide to turn back and leave the cave. As you exit, a massive boulder rolls down from above, blocking the entrance. You're trapped!",
+    "options": []
+  }
+}

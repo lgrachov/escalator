@@ -1,0 +1,101 @@
+{
+  "scenario": {
+    "title": "The Enigmatic Shop",
+    "description": "You step onto an escalator in the mall and arrive at the second floor, where a shop awaits. Suddenly, mushrooms have grown everywhere, even on the walls of the shop! When you blink, they disappear and reappear. You enter the shop, which seems to be made of paper. After leaving, it transforms into stone. You return, and everything appears normal, but all the products are made of metal, including the food. You leave again, and everything turns to metal. Is this an optical illusion or reality? You gather some rice, fish, water, and tea. Upon returning home, the food is soft! Once you cook it, it returns to normal. Finally, you go to sleep.",
+    "options": [
+      {
+        "text": "Enter the shop",
+        "next": "inside_shop"
+      },
+      {
+        "text": "Leave the shop",
+        "next": "outside_shop"
+      }
+    ]
+  },
+  "inside_shop": {
+    "title": "Inside the Shop",
+    "description": "You enter the shop, surrounded by the strange mushrooms. Everything seems to be made of paper. What do you do?",
+    "options": [
+      {
+        "text": "Examine the products",
+        "next": "metal_products"
+      },
+      {
+        "text": "Leave the shop",
+        "next": "outside_shop"
+      }
+    ]
+  },
+  "outside_shop": {
+    "title": "Outside the Shop",
+    "description": "You step outside the shop, and it suddenly turns into stone. You are confused by the transformations. What do you do next?",
+    "options": [
+      {
+        "text": "Re-enter the shop",
+        "next": "inside_shop"
+      },
+      {
+        "text": "Explore the mall",
+        "next": "explore_mall"
+      }
+    ]
+  },
+  "metal_products": {
+    "title": "Metal Products",
+    "description": "You examine the products and realize they are all made of metal, even the food. Is this real or an illusion? What do you do?",
+    "options": [
+      {
+        "text": "Take some food",
+        "next": "gather_food"
+      },
+      {
+        "text": "Leave the shop",
+        "next": "outside_shop"
+      }
+    ]
+  },
+  "gather_food": {
+    "title": "Gathering Food",
+    "description": "You gather some rice, fish, water, and tea. You leave the shop, but everything around you is still metal. You head home.",
+    "options": [
+      {
+        "text": "Cook the food",
+        "next": "cooked_food"
+      },
+      {
+        "text": "Go to sleep",
+        "next": "sleep"
+      }
+    ]
+  },
+  "cooked_food": {
+    "title": "Cooked Food",
+    "description": "Once you cook the food, it returns to normal. You feel relieved. What do you do next?",
+    "options": [
+      {
+        "text": "Enjoy your meal",
+        "next": "enjoy_meal"
+      },
+      {
+        "text": "Go to sleep",
+        "next": "sleep"
+      }
+    ]
+  },
+  "enjoy_meal": {
+    "title": "Enjoying Your Meal",
+    "description": "You enjoy your meal, feeling satisfied after the strange events of the day. Finally, you go to sleep.",
+    "options": []
+  },
+  "sleep": {
+    "title": "Sleep",
+    "description": "You go to sleep, reflecting on the bizarre experiences of the day. What will tomorrow bring?",
+    "options": []
+  },
+  "explore_mall": {
+    "title": "Exploring the Mall",
+    "description": "You decide to explore the mall further, curious about what else might be happening. What do you do?",
+    "options": []
+  }
+}
